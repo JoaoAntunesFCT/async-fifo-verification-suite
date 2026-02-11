@@ -80,4 +80,4 @@ Below are the simulation waveforms generated via Verilator, proving the successf
 ![Pointers](docs/wave2.png)
 
 ---
-*Designed and Verified by João Antunes | https://www.linkedin.com/in/joao-pedro-reis-antunes/
+Designed and Verified by João Antunes | https://www.linkedin.com/in/joao-pedro-reis-antunes/
