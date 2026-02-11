@@ -1,0 +1,19 @@
+# Python Virtual Environment & Cache
+venv/
+__pycache__/
+*.pyc
+
+# Compilações do Verilator e Cocotb
+obj_dir/
+sim_build/
+*.so
+*.o
+
+# Ficheiros de log e ondas de Simulação
+*.vcd
+*.xml
+*.log
+
+# Ficheiros de sistema (Windows/Mac)
+.DS_Store
+Thumbs.db
