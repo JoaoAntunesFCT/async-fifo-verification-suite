@@ -19,9 +19,10 @@ The FIFO is designed to safely transfer data between two completely independent 
 Instead of using legacy SystemVerilog testbenches, this project uses a highly efficient Python-based approach:
 1. **C++ Golden Model:** A pure C++ implementation of a FIFO using `std::deque` acts as the absolute truth. Compiled as a shared library (`.so`).
 2. **Software Bridge:** The C++ model is connected directly to the Python testbench using `ctypes` for seamless memory evaluation.
-3. **Cocotb Regression Suite (`test_fifo.py`):** * **Test 1 (Half-Duplex):** Sequentially fills the FIFO until the `w_full` flag asserts, then reads until `r_empty`.
+3. **Cocotb Regression Suite (`test_fifo.py`):**
+   * **Test 1 (Half-Duplex):** Sequentially fills the FIFO until the `w_full` flag asserts, then reads until `r_empty`.
    * **Test 2 (Full-Duplex):** Simultaneously drives 10,000 randomized transactions on the Write clock while concurrently reading on the Read clock, heavily stressing the Clock Domain Crossing (CDC) logic.
-4. **Functional Coverage:** Utilizes `cocotb-coverage` to mathematically prove perfect uniform data distribution (0-255) and rigorous exercising of the Full/Empty boundary conditions across both tests.
+5. **Functional Coverage:** Utilizes `cocotb-coverage` to mathematically prove perfect uniform data distribution (0-255) and rigorous exercising of the Full/Empty boundary conditions across both tests.
 
 ## 📁 Repository Structure
 ```text
