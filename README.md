@@ -47,7 +47,7 @@ async-fifo-verification-suite/
 └── README.md               # Project Documentation
 ```
 
-## 🚀 How to Run the Simulation
+## 🚀 How to Run
 
 ### Prerequisites
 * Linux (Ubuntu / WSL2)
