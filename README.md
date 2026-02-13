@@ -44,7 +44,7 @@ async-fifo-verification-suite/
 │   ├── wave1.png           
 │   └── wave2.png           
 ├── .gitignore              # Keeps the repo clean of build files
-└── README.md               # You are here!
+└── README.md               # Project Documentation
 ```
 
 ## 🚀 How to Run the Simulation
